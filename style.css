@@ -1,0 +1,30 @@
+body{
+    background-color: bisque;
+}
+h1{
+    margin: 30px;
+    font-size: 8rem;
+    font-family: 'Lobster';
+    color: coral;
+    text-shadow: 5px 0 #232931;
+}
+p{
+    font-size:2rem;;
+    font-family: 'indie flowr'cursive;
+    color: brown;
+}
+footer{
+    text-align: center;
+    margin: 6%;
+    font-size: medium;
+    color: lightcoral;
+}
+.Dice{
+    text-align:center;
+    display:inline-block;
+}
+.container{
+    width: 70%;
+    margin-bottom: auto;
+    text-align: center;
+}
