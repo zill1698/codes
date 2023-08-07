@@ -1,27 +1,44 @@
-<html lang="en">
+<html>
     <head>
-    <meta charset="utf-8">
-<title> Dice game </title>
-<link rel="stylesheet" href="style.css">
-<link hrel="https://fonts.googleapis.com//css?family=Indie+Flowr|Lobster" rel="stylesheet">
+        <title>
+            calculater
+        </title>
     </head>
     <body>
-        <div class="container"></div>
-            <h1> Refresh me </h1>
-            <div class="Dice">
-                <p> Player 1 </p>
-        <img class="img1" src="images/dice 6.png">
-        </div>
-
-
-        <div class="Dice">
-    <p> Player 2 </p>
-    <img class="img2" src="images/dice 6.png">
-        </div>
-        <script src="index.js">
-        </script>
+        <h1> calculate the numbers you want !!</h1>
+        <div> enetr a number <input id="i1" type="number" onclick="num1()"> </div><br><br>
+        <div> enter another number <input id="i2" type="number" onclick="num2()"> </div><br><br>
+        <button id="bt1" onclick="add()"> Add </button>
+        <button id="bt2" onclick="subtract()"> Subtract </button>
+        <button id="bt3" onclick="multiply()"> Multiply </button>
+        <button id="bt4" onclick="divide()"> Divide </button>
+        <button id="bt5" onclick="reset()"> Reset </button>
+<p id="p1"> result=0</p>
+<script>
+    var result=0;
+    function add(){
+     result=Number( document.getElementById("i1").value)+Number(document.getElementById("i2").value)
+     document.getElementById("p1").innerHTML=result;
+    }
+    function subtract(){
+     result=Number( document.getElementById("i1").value)-Number(document.getElementById("i2").value)
+     document.getElementById("p1").innerHTML=result;
+    }
+    function multiply(){
+     result=Number( document.getElementById("i1").value)*Number(document.getElementById("i2").value)
+     document.getElementById("p1").innerHTML=result;
+    }
+    function divide(){
+     result=Number( document.getElementById("i1").value)/Number(document.getElementById("i2").value)
+     document.getElementById("p1").innerHTML=result;
+    }
+    function reset(){
+     document.getElementById("i1").value=0;
+     document.getElementById("i2").value=0;
+     result=0;
+     document.getElementById("p1").innerHTML=result;
+     
+    }
+</script>
     </body>
-    <footer>
-        powered by : zill 
-    </footer>
 </html>
